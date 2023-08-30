@@ -1,0 +1,226 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@650&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk',sans-serif;
+    font-weight: 500;
+}
+@media screen and (min-width:376px) {
+body{
+    border: 1px solid black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    
+
+.container{
+    
+    width: 550px;
+    display: flex;
+    border-radius:25px;
+    gap: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.res{
+    
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+    width: 50%;
+    padding: 35px 20px;
+    border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary{
+    background-color:  hsl(0, 0%, 100%);
+    padding: 35px 20px;
+    align-items: start;
+    width: 50%;
+   
+}
+}
+
+@media screen and (max-width:375px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        
+        
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        gap: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+    }
+    .res{
+        
+        background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+        
+        padding: 35px 20px;
+        border-bottom-left-radius:25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary{
+        background-color:  hsl(0, 0%, 100%);
+        padding: 35px 20px;
+        align-items: start;
+       
+    }
+}
+.res-msg {
+    
+    margin-bottom: 15px;
+    color:hsl(241, 100%, 89%);
+    font-weight:800;
+    font-size: 18px;
+   
+}
+.circle{
+    margin:15px 0px;
+    background-image: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    height:130px;
+    width:130px ;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle span{
+    
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5em;
+    
+
+}
+.circle p{
+        font-size: 12px;
+       color:hsl(241, 100%, 89%) ; 
+       font-weight: 100;
+   
+    
+}
+.Grt p{
+    
+    margin: 20px 0px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.congrat p{
+    
+    margin:30px 10px 10px 10px;
+    text-align: center;
+    color:hsl(241, 100%, 89%);
+    font-weight:200px;
+    font-size: 14px;
+}
+.smr-msg{
+    margin-bottom: 15px;
+    font-weight:800;
+    font-size: 18px;
+}
+.rection{
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 100%, 97%);
+    justify-content:space-between ;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.memory{
+    display: flex;
+    align-items: center;
+    background-color: hsl(39, 100%, 97%);
+    justify-content:space-between ;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.verbal{
+    display: flex;
+    align-items: center;
+    background-color: hsl(166, 100%, 97%);
+    justify-content:space-between ;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.visual{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+ 
+    background-color: hsl(234, 85%, 97%);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.btn{
+    
+    padding: 10px;
+    text-align: center;
+    margin: 30px  10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: hsl(241, 100%, 89%);
+    background-color: hsl(224, 30%, 27%);
+    transition:  background-color 0.3s;
+
+}
+.nb{
+    align-self: center;
+    font-weight:500px;
+    font-size: 16px;
+    justify-content:space-between;
+}
+.btn:hover{
+    background-color: hsl(241, 81%, 54%) ;
+    color: hsl(0, 0%, 100%);
+}
+.pourc{
+    color:hsl(241, 100%, 89%);
+    font-weight:200px;
+    font-size: 14px;
+}
+.rection .icon{
+    color:hsl(0, 100%, 67%) ;
+}
+.memory .icon{
+    color:  hsl(39, 100%, 56%);
+}
+.verbal .icon{
+    color:  hsl(166, 100%, 37%);
+}
+.visual .icon{
+    color:hsl(234, 85%, 45%);
+}
